@@ -11,7 +11,6 @@ You can access the live version of this project [here](https://explore-heaven.on
 - [Getting Started](#getting-started)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -52,10 +51,11 @@ To run this project locally, follow these steps:
 Replace your_mongodb_url, your_cloudinary_cloud_name, your_cloudinary_api_key, and your_cloudinary_api_secret with your actual MongoDB URI and Cloudinary API credentials.
 
 Run the application using npm start.
+
 Access the application in your web browser at http://localhost:3000.
 
-Deployment
+## Deployment
 This project is deployed on Render. You can access the live version [here](https://explore-heaven.onrender.com/listings).
 
-Contributing
+## Contributing
 Contributions are welcome! If you'd like to contribute to this project, feel free to submit a pull request.

@@ -7,6 +7,7 @@ You can access the live version of this project [here](https://explore-heaven.on
 ## Table of Contents
 
 - [Overview](#overview)
+- [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Deployment](#deployment)
@@ -15,6 +16,16 @@ You can access the live version of this project [here](https://explore-heaven.on
 ## Overview
 
 Explore Heaven is a web application designed to provide users with a platform to explore and discover heavenly destinations around the world. Users can browse through a list of heavenly listings, view details of each listing, and even contribute their own listings.
+
+## Features
+
+- **Browse Listings**: Explore a diverse range of heavenly listings, including vacation rentals, villas, cottages, treehouses, and more.
+
+- **Detailed Listings**: Each listing provides comprehensive information, including descriptions, amenities, photos, pricing, availability, and reviews from previous guests.
+
+- **Search and Filters**: Easily search for listings based on location, dates, price range, amenities, and property type to find the perfect heavenly getaway.
+
+- **User Accounts**: Create an account to save favorite listings, manage bookings, communicate with hosts, and leave reviews after your stay or experience.
 
 ## Technologies Used
 

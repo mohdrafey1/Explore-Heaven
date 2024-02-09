@@ -94,6 +94,11 @@ body {
     background-color: white;
 }
 
+/* review page */
+#respreview {
+    width: 650px;
+}
+
 /* New Page */
 .add-btn {
     background-color: #fe424d !important;
@@ -124,5 +129,34 @@ body {
 
 #map {
     height: 400px;
-    width: 80vh;
+    max-width: 100%;
+    width: 650px;
 }
+
+@media (max-width: 499px) {
+    #listing-card {
+      width: 100%;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+
+    #respreview {
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+
+    #mapresp {
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+
+    .btns .btn {
+        width: 100px;
+        margin: 5px;
+      }
+  }

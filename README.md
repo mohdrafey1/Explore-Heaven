@@ -50,11 +50,12 @@ To run this project locally, follow these steps:
    CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
 Replace your_mongodb_url, your_cloudinary_cloud_name, your_cloudinary_api_key, and your_cloudinary_api_secret with your actual MongoDB URI and Cloudinary API credentials.
+
 Run the application using npm start.
 Access the application in your web browser at http://localhost:3000.
 
 Deployment
-This project is deployed on Render. You can access the live version [here].
+This project is deployed on Render. You can access the live version [here](https://explore-heaven.onrender.com/listings).
 
 Contributing
 Contributions are welcome! If you'd like to contribute to this project, feel free to submit a pull request.

@@ -43,7 +43,7 @@ module.exports.createListing = async (req, res, next) => {
     console.log(savedListing);
 
     req.flash("success", "New Listing Created!");
-    res.redirect("/listings");
+    res.redirect(`/listings/${savedListing._id}`);
 };
 
 module.exports.renderEditForm = async (req, res) => {

@@ -17,4 +17,6 @@ router.route("/login")
 
 router.get("/logout", userController.logout);
 
+router.get("/users/:userId", userController.showUser);
+
 module.exports = router;

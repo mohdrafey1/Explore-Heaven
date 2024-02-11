@@ -1,0 +1,38 @@
+<% layout("layouts/boilerplate") %>
+    <style>
+        .row {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .row p {
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            height: 50px;
+            text-align: center;
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Profile</title>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="offset-2 col-8">
+                <h1>User Profile</h1>
+                <p>Name: <%= user.username %></p>
+                <p>Email: <%= user.email %></p>
+            </div>
+        </div>
+
+    </body>
+
+    </html>

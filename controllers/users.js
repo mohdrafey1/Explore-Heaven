@@ -42,3 +42,19 @@ module.exports.logout = (req, res, next) => {
         res.redirect("/listings");
     });
 };
+
+module.exports.showUser = async (req, res) => {
+    try {
+        const userId = req.params.userId; // Assuming you pass the userId in the URL
+        const user = await User.findById(userId);
+        if (!user) {
+            req.flash("error", "User not found!");
+            return res.redirect("/"); // Redirect to homepage or appropriate error page
+        }
+        res.render("users/profile.ejs", { user }); // Render user profile page
+    } catch (err) {
+        console.error(err);
+        req.flash("error", "Something went wrong");
+        res.redirect("/"); // Redirect to homepage or appropriate error page
+    }
+};

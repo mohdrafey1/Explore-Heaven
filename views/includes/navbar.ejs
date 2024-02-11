@@ -19,6 +19,11 @@
     border-radius: 20px;
     padding: 0.5rem 3rem 0.5rem 3rem;
   }
+
+  .usericon {
+    font-size: 20px;
+  }
+
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
@@ -53,6 +58,7 @@
         <% } %>
         <% if(currUser) { %>
         <a class="nav-link" href="/logout"><b>Log out</b></a>
+        <a class="nav-link usericon" href="/users/<%= currUser._id %>"><i class="fa-solid fa-user"></i></a>
         <% } %>
       </div>
     </div>

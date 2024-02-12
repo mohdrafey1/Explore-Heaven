@@ -21,7 +21,23 @@
   }
 
   .usericon {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .ihover {
+    margin-left: 3px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  }
+
+  .ihover:hover {
+    border-radius: 12px;
+    border: 1px solid white;
+    background-color: #fe424d;
+    color: white !important;
+    font-weight: 900;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
   }
 
 </style>
@@ -42,7 +58,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/listings">Explore</a>
+        <a class="nav-link ihover" href="/listings">Explore</a>
       </div>
       <div class="navbar-nav ms-auto">
         <form class="d-flex" role="search">
@@ -51,14 +67,14 @@
         </form>
       </div>
       <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="/listings/new">Add your home</a>
+        <a class="nav-link ihover" href="/listings/new">Add your home</a>
         <% if(!currUser) { %>
-          <a class="nav-link" href="/signup"><b>Sign Up</b></a>
-          <a class="nav-link" href="/login"><b>Log in</b></a>
+          <a class="nav-link ihover" href="/signup"><b>Sign Up</b></a>
+          <a class="nav-link ihover" href="/login"><b>Log in</b></a>
         <% } %>
         <% if(currUser) { %>
-        <a class="nav-link" href="/logout"><b>Log out</b></a>
-        <a class="nav-link usericon" href="/users/<%= currUser._id %>"><i class="fa-solid fa-user"></i></a>
+        <a class="nav-link ihover" href="/logout"><b>Log out</b></a>
+        <a class="nav-link usericon ihover" href="/users/<%= currUser._id %>"><i class="fa-solid fa-user"></i>&nbsp;<%= currUser.username %></a>
         <% } %>
       </div>
     </div>

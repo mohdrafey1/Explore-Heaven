@@ -19,7 +19,6 @@ module.exports.showListing = async (req, res) => {
         req.flash("error", "Listing is Either Deleted or does not exist!");
         return res.redirect("/listings");
     }
-    console.log(listing);
     res.render("listings/show.ejs", { listing });
 };
 

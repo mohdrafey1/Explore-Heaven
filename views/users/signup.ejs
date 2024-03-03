@@ -1,41 +1,154 @@
 <% layout("layouts/boilerplate") %>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-<div class="row mt-3">
-    <h1 class="col-6 offset-3">SignUp On Explore Heaven</h1>
-    <div class="col-6 offset-3">
-        <form action="/signup" method="POST" class="needs-validation" novalidate>
-            <div class="mb-3">
-                <label for="username" class="form-lable">Username</label>
-                <input
-                  name="username"
-                  id="username"
-                  type="text"
-                  class="form-control"
-                  required
-                />
-                <div class="valid-feedback">looks good!</div>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-lable">Email</label>
-                <input
-                  name="email"
-                  id="email"
-                  type="email"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-lable">Password</label>
-                <input
-                  name="password"
-                  id="password"
-                  type="password"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <button class="btn btn-success">SignUp</button>
-        </form>
+    * {
+      box-sizing: border-box;
+    }
+
+    .main-signup {
+      font-family: 'Roboto';
+      margin: 10px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .container-signup {
+      color: white;
+      background-color: #219ebc;
+      padding: 15px 30px;
+      border-radius: 5px;
+      height: 68vh;
+    }
+
+    .container-signup h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container-signup a {
+      text-decoration: none;
+      color: lightblue;
+    }
+
+    .container-signup a:hover {
+      color: blue;
+    }
+
+    .btn-signup {
+      cursor: pointer;
+      display: inline-block;
+      width: 100%;
+      background: lightblue;
+      padding: 15px;
+      font-family: inherit;
+      font-size: 16px;
+      border: 0;
+      border-radius: 5px;
+    }
+
+    .btn-signup:focus {
+      outline: none;
+    }
+
+    .btn-signup:active {
+      transform: scale(0.98);
+    }
+
+    .register-signup {
+      margin-top: 30px;
+    }
+
+    .form-control-signup {
+      position: relative;
+      margin: 20px 0 40px;
+      width: 300px;
+    }
+
+    .form-control-signup input {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px #fff solid;
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      font-size: 18px;
+      color: #fff;
+      position: relative;
+      z-index: 100;
+    }
+
+    .form-control-signup input:focus,
+    .form-control-signup input:valid {
+      outline: 0;
+      border-bottom-color: lightblue;
+    }
+
+    .form-control-signup label {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      pointer-events: none;
+    }
+
+    .form-control-signup label span {
+      display: inline-block;
+      font-size: 18px;
+      min-width: 5px;
+      transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .form-control-signup input:focus+label span,
+    .form-control-signup input:valid+label span {
+      color: lightblue;
+      transform: translateY(-30px);
+    }
+
+    .form-control-signup input:-webkit-autofill {
+      color: #fff !important;
+    }
+  </style>
+  <div class="main-signup">
+    <div class="container-signup">
+      <h1>Please signup</h1>
+      <form action="/signup" method="POST" class="needs-validation" novalidate>
+        <div class="form-control-signup">
+          <input name="username" id="username" type="text" required />
+          <label for="username">Username</label>
+          <div class="valid-feedback">looks good!</div>
+        </div>
+        <div class="form-control-signup">
+          <input name="email" id="email" type="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-control-signup">
+          <input name="password" id="password" type="password" required />
+          <label for="password">Password</label>
+        </div>
+        <button class="btn-signup">SignUp</button>
+      </form>
+
+      <p class="register-signup">Already have an account? <a href="/signup">signup</a></p>
+
     </div>
-</div>
+  </div>
+
+  <script>
+    const labels = document.querySelectorAll('.form-control-signup label');
+
+    labels.forEach((label) => {
+      label.innerHTML = label.innerText
+        .split('')
+        .map(
+          (letter, idx) =>
+            `<span style="transition-delay:${idx * 50}ms">${letter}</span>`
+        )
+        .join('');
+    });
+
+  </script>

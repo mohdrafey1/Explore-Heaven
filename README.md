@@ -44,7 +44,7 @@ The project is built using the following technologies:
 
 ## Getting Started
 
-To run this project locally, follow these steps:
+- **To run this project locally, follow these steps:**
 
 1. Clone this repository to your local machine.
 2. Install Node.js if you haven't already.

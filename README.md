@@ -23,9 +23,14 @@ Explore Heaven is a web application designed to provide users with a platform to
 
 - **Detailed Listings**: Each listing provides comprehensive information, including descriptions, amenities, photos, pricing, availability, and reviews from previous guests.
 
+- ** User Reiviews**: Read and leave reviews for listings to share your experience with others. You can also delete your review if needed.
+
 - **Search and Filters**: Easily search for listings based on location, dates, price range, amenities, and property type to find the perfect heavenly getaway.
 
-- **User Accounts**: Create an account to save favorite listings, manage bookings, communicate with hosts, and leave reviews after your stay or experience.
+
+User Reviews: 
+User Accounts: Create an account to save favorite listings, manage bookings, communicate with hosts, and leave reviews after your stay or experience.
+Login and Signup: Sign in or create an account to access all features and personalize your experience.
 
 ## Technologies Used
 
@@ -61,7 +66,7 @@ The project is built using the following technologies:
 
 Replace your_mongodb_url, your_cloudinary_cloud_name, your_cloudinary_api_key, and your_cloudinary_api_secret with your actual MongoDB URI and Cloudinary API credentials.
 
-Run the application using npm start.
+Run the application.
 
 Access the application in your web browser at http://localhost:3000.
 

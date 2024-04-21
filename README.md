@@ -23,14 +23,10 @@ Explore Heaven is a web application designed to provide users with a platform to
 
 - **Detailed Listings**: Each listing provides comprehensive information, including descriptions, amenities, photos, pricing, availability, and reviews from previous guests.
 
-- ** User Reiviews**: Read and leave reviews for listings to share your experience with others. You can also delete your review if needed.
+- **User Reiviews**: Read and leave reviews for listings to share your experience with others. You can also delete your review if needed.
+  
+- **Login and Signup**: Sign in or create an account to access all features and personalize your experience with using passport library .
 
-- **Search and Filters**: Easily search for listings based on location, dates, price range, amenities, and property type to find the perfect heavenly getaway.
-
-
-User Reviews: 
-User Accounts: Create an account to save favorite listings, manage bookings, communicate with hosts, and leave reviews after your stay or experience.
-Login and Signup: Sign in or create an account to access all features and personalize your experience.
 
 ## Technologies Used
 
@@ -41,6 +37,7 @@ The project is built using the following technologies:
 - **JavaScript**: For client-side scripting.
 - **EJS**: Embedded JavaScript templates for dynamic content generation.
 - **Node.js**: A JavaScript runtime environment for server-side code.
+- **Passport.js**: A authentication middleware for Node.js, used for user authentication and session management.
 - **Bootstrap**: A front-end framework for building responsive and mobile-first websites.
 - **Express.js**: A web application framework for Node.js used for building APIs and web applications.
 - **MongoDB Atlas**: A cloud-hosted MongoDB service for database storage.

@@ -25,7 +25,7 @@ Explore Heaven is a web application designed to provide users with a platform to
 
 - **User Reiviews**: Read and leave reviews for listings to share your experience with others. You can also delete your review if needed.
   
-- **Login and Signup**: Sign in or create an account to access all features and personalize your experience with using passport library .
+- **Login and Signup**: Sign in or create an account to access all features and personalize your experience.
 
 
 ## Technologies Used
